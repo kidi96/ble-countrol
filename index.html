@@ -8,13 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
    button  { padding: 10px 20px; margin: 5px; font-size: 16px; }
-   button1  { padding: 10px 20px; margin: 10px; font-size: 16px;
+   .blue-button  { padding: 10px 20px; margin: 10px; font-size: 16px;
             background-color: #007BFF;
             color : white;
             border : none;
             border-radius:10px;
             cursor : pointer;
             transition : background-color 0.3s;} 
+   .blue_button:hover{background-color: #0056b3;} 
     #log {
       margin-top: 10px;
       white-space: pre-wrap;
@@ -28,7 +29,7 @@
 </head>
 <body>
   <h2>📡 BLE 장치 제어</h2>
-  <button1 onclick="connect()">🔗 BLE 연결</button>
+  <button class="blue-button" onclick="connect()">🔗 BLE 연결</button>
   <button onclick="send('>V1')">전압 읽기</button>
   <button onclick="send('>T1')">온도 읽기</button>
   <button onclick="send('>B1')">버저 ON</button>
