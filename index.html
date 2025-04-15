@@ -16,6 +16,15 @@
             cursor : pointer;
             transition : background-color 0.3s;} 
    .blue_button:hover{background-color: #0056b3;} 
+
+   .yellow-button  { padding: 10px 20px; margin: 10px; font-size: 16px;
+            background-color: #FFD700;
+            color : black;
+            border : none;
+            border-radius:10px;
+            cursor : pointer;
+            transition : background-color 0.3s;} 
+   .yellow_button:hover{background-color: #e6c200;}  
     #log {
       margin-top: 10px;
       white-space: pre-wrap;
@@ -36,10 +45,10 @@
   <button onclick="send('>B0')">버저 OFF</button>
   <button onclick="send('>R1')">릴레이 ON</button>
   <button onclick="send('>R0')">릴레이 OFF</button>
-  <button onclick="send('>M11')">MEL1 ON</button>
-  <button onclick="send('>M10')">MEL1 OFF</button>
-  <button onclick="send('>M21')">MEL2 ON</button>
-  <button1 onclick="send('>M20')">MEL2 OFF</button>
+  <button class="yellow-button" onclick="send('>M11')">MEL1 ON</button>
+  <button class="yellow-button" onclick="send('>M10')">MEL1 OFF</button>
+  <button class="yellow-button" onclick="send('>M21')">MEL2 ON</button>
+  <button class="yellow-button" onclick="send('>M20')">MEL2 OFF</button>
   
   <div id="log"></div>
 
